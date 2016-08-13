@@ -34,14 +34,25 @@
 
             function(Y){
 
+                var events = [
+                    {
+                        content: 'Marihuana, 5 mg',
+                        startDate: new Date(2016, 8, 13, 3),
+                        endDate: new Date(2016, 8, 13, 4),
+                        color: '#8d8'
+                    }
+                ];
+
+                var agendaView = new Y.SchedulerAgendaView();
                 var dayView = new Y.SchedulerDayView();
 
                 new Y.Scheduler(
                     {
                         boundingBox: '#meds',
-                        date: new Date(2016, 8, 13)                        ,
+                        date: new Date(2016, 8, 13),
+                        items: events,
                         render: true,
-                        views: [dayView]
+                        views: [agendaView, dayView]
                     }
                 );
             }
