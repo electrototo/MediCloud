@@ -38,25 +38,15 @@
         	<div class="collapse navbar-collapse" id="navigation-example">
         		<ul class="nav navbar-nav navbar-right">
     				<li>
-    					<a href="../components-documentation.html" class="btn btn-simple btn-white" data-toggle="modal" data-target="#loginModal">
-    						Iniciar Sesión
-    					</a>
+    					<button class="btn btn-default btn-simple" data-toggle="modal" data-target="#loginModal">
+    						Iniciar Sesi&oacute;n
+    					</button>
     				</li>
-		            <li>
-		                <a href="https://twitter.com/CreativeTim" target="_blank" class="btn btn-simple btn-white btn-just-icon">
-							<i class="fa fa-twitter"></i>
-						</a>
-		            </li>
-		            <li>
-		                <a href="https://www.facebook.com/CreativeTim" target="_blank" class="btn btn-simple btn-white btn-just-icon">
-							<i class="fa fa-facebook-square"></i>
-						</a>
-		            </li>
-					<li>
-		                <a href="https://www.instagram.com/CreativeTimOfficial" target="_blank" class="btn btn-simple btn-white btn-just-icon">
-							<i class="fa fa-instagram"></i>
-						</a>
-		            </li>
+    				<li>
+    					<button class="btn btn-default btn-simple" data-toggle="modal" data-target="#signupModal">
+    						Registrarse
+    					</button>
+    				</li>
         		</ul>
         	</div>
     	</div>
@@ -79,7 +69,7 @@
 		    	<div class="section text-center section-landing">
 	                <div class="row">
 	                    <div class="col-md-8 col-md-offset-2">
-	                        <h2 class="title">Una solución para la salud</h2>
+	                        <h2 class="title">Una soluci&oacute;n para la salud</h2>
 	                        <h5 class="description">
 	                        	Lorem lorem lorem tugfa ipsum
 	                        </h5>
@@ -131,7 +121,7 @@
 	                <div class="row">
 	                    <div class="col-md-8 col-md-offset-2">
 	                        <h2 class="text-center title">Contáctanos</h2>
-							<h4 class="text-center description">Si deseas más información acerca de nuestros productos y/o servicios, puedes contactarnos directamente aquí abajo</h4>
+							<h4 class="text-center description">Si deseas más informaci&oacute;n acerca de nuestros productos y/o servicios, puedes contactarnos directamente aquí abajo</h4>
 	                        <form class="contact-form">
 	                            <div class="row">
 	                                <div class="col-md-6">
@@ -189,6 +179,7 @@
 	</div>
 </body>
 	
+	<!-- Modal Login -->
 	<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
@@ -196,15 +187,62 @@
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
 						<i class="material-icons">clear</i>
 					</button>
-					<h4 class="modal-title">Iniciar Sesión</h4>
+					<h4 class="modal-title">Iniciar Sesi&oacute;n</h4>
 				</div>
 				<div class="modal-body">
-				<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
-				</p>
+					<form>
+						<div class="form-group label-floating is-empty">
+							<label class="control-label">Correo Electrónico</label>
+							<input type="email" name="email" class="form-control"/>
+							<span class="material-input"></span>
+						</div>
+						<div class="form-group label-floating is-empty">
+							<label class="control-label">Contraseña</label>
+							<input type="password" name="pwd" class="form-control"/>
+							<span class="material-input"></span>
+						</div>
+					</form>
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-default btn-simple">Iniciar Sesión</button>
+					<button type="button" class="btn btn-info btn-simple">Iniciar Sesi&oacute;n</button>
+					<button type="button" class="btn btn-info btn-simple" data-toggle="modal" data-target="#signupModal" data-dismiss="modal">Registrarse</button>
+					<button type="button" class="btn btn-danger btn-simple" data-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Modal Signup -->
+	<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+						<i class="material-icons">clear</i>
+					</button>
+					<h4 class="modal-title">Registrarse</h4>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group label-floating is-empty">
+							<label class="control-label">Correo Electrónico</label>
+							<input type="email" name="email" class="form-control"/>
+							<span class="material-input"></span>
+						</div>
+						<div class="form-group label-floating is-empty">
+							<label class="control-label">Contraseña</label>
+							<input type="password" name="pwd" class="form-control"/>
+							<span class="material-input"></span>
+						</div>
+						<div class="form-group label-floating is-empty">
+							<label class="control-label">Repite tu contraseña</label>
+							<input type="password" name="pwd2" class="form-control"/>
+							<span class="material-input"></span>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
 					<button type="button" class="btn btn-info btn-simple">Registrarse</button>
+					<button type="button" class="btn btn-info btn-simple" data-toggle="modal" data-target="#loginModal" data-dismiss="modal">Iniciar Sesi&oacute;n</button>
 					<button type="button" class="btn btn-danger btn-simple" data-dismiss="modal">Cerrar</button>
 				</div>
 			</div>
