@@ -1,5 +1,5 @@
 # MediCloud
-## Te recordamos tu tratamiento para que nunca olvides de lo importante
+## Te recordamos tu tratamiento para que nunca olvides lo importante
 
 --------------------
 ### ¿Qué es MediCloud?
