@@ -8,5 +8,9 @@ urlpatterns = [
 	url(r'^doctors/', views.doctors, name="doctors"),
 	url(r'^family/', views.family, name="family"),
 	url(r'^medicine/', views.medicine, name="medicine"),
-	url(r'^account/', views.account, name="account")
+	url(r'^account/', views.account, name="account"),
+
+	url(r'^statistics/', views.statistics, name="statistics"),
+	url(r'^patients/', views.patients, name="patients"),
+	url(r'^profileDoc/', views.accountDoctor, name="doctorAccount")
 ]
