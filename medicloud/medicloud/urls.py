@@ -12,4 +12,5 @@ urlpatterns = patterns('',
     url(r'^', include('interface.urls', namespace="interface")),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^login/', include('login.urls', namespace="login")),
+    url(r'^register/', include('register.urls', namespace="register"))
 )

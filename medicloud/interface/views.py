@@ -11,7 +11,7 @@ def dashboard(request):
 	if request.user.baseuser.type_of_user == "patient":
 		return render(request, "admin/lp-patient.html", {'user': request.user, 'agenda': True})
 	else:
-		return render(request, "index.html")
+		return render(request, "admin/lp-doctor.html", {'user': request.user})
 
 def dispositives(request):
 	return render(request, "admin/dispositivos.html", {'user': request.user, 'dispositivos': True})
@@ -27,3 +27,14 @@ def medicine(request):
 
 def account(request):
 	return render(request, "admin/profile.html", {'user': request.user, 'cuenta': True})
+
+
+
+def statistics(request):
+	return render(request, "admin/statistics.html", {'user': request.user, 'statistics': True})
+
+def patients(request):
+	return render(request, "admin/lp-doctor.html", {'user': request.user, 'patients': True})
+
+def accountDoctor(request):
+	return render(request, "admin/profileDoctor.html", {'user': request.user, 'accountD': True})

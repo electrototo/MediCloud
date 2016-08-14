@@ -11,9 +11,27 @@
 
                 var events = [
                     {
-                        content: 'Marihuana, 5 mg',
-                        startDate: new Date(2016, 8, 13, 3),
-                        endDate: new Date(2016, 8, 13, 4),
+                        content: 'Metformina. 500 mg',
+                        startDate: new Date(2016, 8, 14, 6),
+                        endDate: new Date(2016, 8, 14, 12),
+                        color: '#8d8'
+                    },
+                    {
+                        content: 'Captofril. Dosis: 25 mg. Tomar con alimentos',
+                        startDate: new Date(2016, 8, 14, 6),
+                        endDate: new Date(2016, 8, 14, 12),
+                        color: '#8d8'
+                    },
+                    {
+                        content: 'Captofril. Dosis: 25 mg. Tomar con alimentos',
+                        startDate: new Date(2016, 8, 14, 16),
+                        endDate: new Date(2016, 8, 14, 20),
+                        color: '#8d8'
+                    },
+                    {
+                        content: 'Levotiroxinafril. Dosis: 10 mg.',
+                        startDate: new Date(2016, 8, 14, 6),
+                        endDate: new Date(2016, 8, 14, 12),
                         color: '#8d8'
                     }
                 ];
@@ -24,7 +42,7 @@
                 new Y.Scheduler(
                     {
                         boundingBox: '#meds',
-                        date: new Date(2016, 8, 13),
+                        date: new Date(2016, 8, 14),
                         items: events,
                         render: true,
                         views: [agendaView, dayView]

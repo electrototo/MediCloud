@@ -11,6 +11,7 @@ class baseUser(models.Model):
 
 class doctorExtent(models.Model):
 	basicInformation = models.CharField(max_length=400)
+
 	doctor = models.OneToOneField(User)	
 
 	def __str__(self):

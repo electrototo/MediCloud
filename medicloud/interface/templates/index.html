@@ -17,6 +17,23 @@
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
 
+	<style type="text/css">
+		/* Rules for sizing the icon. */
+		.material-icons.md-12 { font-size: 12px; }
+		.material-icons.md-18 { font-size: 18px; }
+		.material-icons.md-24 { font-size: 24px; }
+		.material-icons.md-36 { font-size: 36px; }
+		.material-icons.md-48 { font-size: 48px; }
+		
+		/* Rules for using icons as black on a light background. */
+		.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+		.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+		
+		/* Rules for using icons as white on a dark background. */
+		.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+		.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+	</style>
+
 	<!-- CSS Files -->
     <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet" />
     <link href="{% static "css/lp-toolkit/material-kit.css" %}" rel="stylesheet"/>
@@ -25,7 +42,7 @@
 </head>
 
 <body class="landing-page">
-    <nav class="navbar navbar-transparent navbar-absolute">
+    <nav class="navbar navbar-transparent navbar-color-on-scroll navbar-fixed-top">
     	<div class="container">
         	<!-- Brand and toggle get grouped for better mobile display -->
         	<div class="navbar-header">
@@ -35,18 +52,22 @@
 		            <span class="icon-bar"></span>
 		            <span class="icon-bar"></span>
         		</button>
-        		<a class="navbar-brand" href="#">MediCloud&trade;</a>
+        		<a class="navbar-left" href="#"><img src="/static/img/logo.png" alt="Circle Image" class="img-responsive" width="50" height="50"></a>
+        		<a class="navbar-brand navbar-center" href="#">&nbsp;MediCloud</a>
         	</div>
 
         	<div class="collapse navbar-collapse" id="navigation-example">
         		<ul class="nav navbar-nav navbar-right">
     				<li>
-    					<button class="btn btn-default btn-simple" data-toggle="modal" data-target="#loginModal">
+    					<button class="btn btn-info" data-toggle="modal" data-target="#loginModal">
     						Iniciar Sesi&oacute;n
     					</button>
     				</li>
     				<li>
-    					<button class="btn btn-default btn-simple" data-toggle="modal" data-target="#signupModal">
+    					<p>&nbsp;</p>
+    				</li>
+    				<li>
+    					<button class="btn btn-info" data-toggle="modal" data-target="#signupModal">
     						Registrarse
     					</button>
     				</li>
@@ -59,26 +80,31 @@
         <div class="header header-filter" style="background-image: url('/static/img/lp/header.jpg');">
             <div class="container">
                 <div class="row">
+                	<div class="col-md-2">
+                		<img src="/static/img/logo.png" alt="Circle Image" class="img-responsive">
+                	</div>
 					<div class="col-md-6">
-						<h1 class="title">MediCloud&trade;</h1>
+						<h1 class="title">MediCloud</h1>
 	                    <h4>Te recordamos tu tratamiento para que nunca olvides lo importante.</h4>
 					</div>
                 </div>
             </div>
         </div>
 
+
+
 		<div class="main main-raised">
 			<div class="container">
 		    	<div class="section text-center section-landing">
 	                <div class="row">
 	                    <div class="col-md-8 col-md-offset-2">
-	                        <h2 class="title">Una soluci&oacute;n para la salud</h2>
+	                        <h2 class="title">Una soluci&oacute;n para todos</h2>
 	                        <h5 class="description">
-	                        	Lorem lorem lorem tugfa ipsum
+	                        	¿Cuántas veces olvidas una medicina? No te preocupes, nosotros nos encargamos. Contamos con la plataforma con mayor desarrollo pensada por y para Pacientes, Familiares y Médicos que tratan con enfermedades crónico-degenerativas. Que los tratamientos sean una preocupación menos es una prioridad para nosotros.
 	                        </h5>
 	                    </div>
 	                </div>
-
+	                <hr>
 					<div class="features">
 						<div class="row">
 	                	    <div class="col-md-8 col-md-offset-2">
@@ -88,20 +114,11 @@
 						<div class="row">
 		                    <div class="col-md-4">
 								<div class="info">
-									<div class="icon icon-primary">
-										<i class="material-icons">chat</i>
-									</div>
-									<h4 class="info-title">Rápida</h4>
-									<p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
-								</div>
-		                    </div>
-		                    <div class="col-md-4">
-								<div class="info">
 									<div class="icon icon-success">
 										<i class="material-icons">verified_user</i>
 									</div>
 									<h4 class="info-title">Robusta</h4>
-									<p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
+									<p>Todos nuestros productos están pensados para funcionar ante cualquier situación y cualquier grupo de usuarios, contamos con múltiples CloudMods&trade; que brindan una integración total con MediCloud&reg;</p>
 								</div>
 		                    </div>
 		                    <div class="col-md-4">
@@ -110,15 +127,34 @@
 										<i class="material-icons">fingerprint</i>
 									</div>
 									<h4 class="info-title">Segura</h4>
-									<p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
+									<p>Nuestros CloudMods&trade; son equipos de alto desempeño diseñados para funcionar aún en las situaciones más adversas para que usted solo se preocupe de cumplir su tratamiento</p>
+								</div>
+		                    </div>
+		                    <div class="col-md-4">
+								<div class="info">
+									<div class="icon icon-primary">
+										<i class="material-icons">chat</i>
+									</div>
+									<h4 class="info-title">Comunicación Constante</h4>
+									<p>Involucramos un sistema de pronta respuesta para mantener retroalimentación constante de todos los Pacientes, Familiares y Médicos</p>
 								</div>
 		                    </div>
 		                </div>
 					</div>
 	            </div>
-
+	            <hr>
 	        	<div class="section" id="carousel">
 					<div class="container">
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2">
+								<h1 class="title"><strong>CloudMods&trade;</strong> el futuro</h1>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2">
+								<h3 class="description">Nuestra plataforma cuenta con una librería de desarrollo completamente abierta para el diseño de CloudMods&trade; los cuales permiten una interacción tangible utilizando el Internet de las Cosas</h3>
+							</div>
+						</div>
 						<div class="row">
 							<div class="col-md-8 col-md-offset-2">
 
@@ -137,19 +173,19 @@
 											<!-- Wrapper for slides -->
 											<div class="carousel-inner">
 												<div class="item active">
-													<img src="/static/img/lp/render1.jpg" alt="Awesome Image">
+													<img src="/static/img/CloudMod/eagleview.jpg" alt="Awesome Image">
 													<div class="carousel-caption">
 														<h4><i class="material-icons">filter_drama</i> Siempre conectado, siempre disponible</h4>
 													</div>
 												</div>
 												<div class="item">
-													<img src="/static/img/lp/render2.jpg" alt="Awesome Image">
+													<img src="/static/img/CloudMod/side.jpg" alt="Awesome Image">
 													<div class="carousel-caption">
 														<h4><i class="material-icons">lock_open</i>Un sistema abierto para el desarrollo libre de mejoras para la salud</h4>
 													</div>
 												</div>
 												<div class="item">
-													<img src="/static/img/lp/render3.jpg" alt="Awesome Image">
+													<img src="/static/img/CloudMod/top.jpg" alt="Awesome Image">
 													<div class="carousel-caption">
 														<h4><i class="material-icons">add_alert</i> Alertas en el internet de las cosas para preservar la salud</h4>
 													</div>
@@ -222,7 +258,7 @@
 	                <ul>
 	                    <li>
 	                    	<p>
-	                    		MediCloud &trade;
+	                    		MediCloud&reg;
 	                    	</p>
 	                    </li>
 	                </ul>
@@ -241,7 +277,7 @@
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<form method="post" action="{% url 'login:login' %}">
-					{% csrf_token %}
+				{% csrf_token %}
 					<div class="modal-header">
 						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
 							<i class="material-icons">clear</i>
@@ -288,8 +324,8 @@
 	<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
-				<form method="post" action="/">
-					{% csrf_token %}
+				<form method="post" action="{% url 'login:login' %}">
+				{% csrf_token %}
 					<div class="modal-header">
 						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
 							<i class="material-icons">clear</i>
