@@ -26,10 +26,6 @@
     <link href='/static/css/admin/googleFont.css' rel='stylesheet' type='text/css'>
     <link href="/static/css/admin/themify-icons.css" rel="stylesheet">
 
-    <script src="/static/js/scheduler/aui-min.js"></script>
-
-    
-
 </head>
 <body>
 
@@ -50,18 +46,20 @@
 
             <ul class="nav">
 
-                <li class="active">
-                    <a href="#">
+                <li>
+                    <a href="lp-doctor.html">
                         <i class="ti-eye"></i>
                         <p>Mis pacientes</p>
                     </a>
                 </li>
-                <li>
-                    <a href="statistics.html">
+
+                <li class="active">
+                    <a href="#">
                         <i class="ti-pulse"></i>
                         <p>Estadísticas</p>
                     </a>
                 </li>
+
                 <li>
                     <a href="profileDoctor.html">
                         <i class="ti-user"></i>
@@ -83,9 +81,8 @@
                         <span class="icon-bar bar2"></span>
                         <span class="icon-bar bar3"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Bienvenido de regreso, asonidllnn</a>
+                    <a class="navbar-brand" href="#">Bienvenido de regreso, humberto woody</a>
                 </div>
-
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li>
@@ -100,34 +97,91 @@
             </div>
         </nav>
 
-         <div class="content">
+
+        <div class="content">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-lg-12">
                         <div class="card">
                             <div class="content">
-                                <div class="row">
-                                    <div class="col-xs-12">
-                                        <a class="btn btn-default btn-info center-block" href="patient.html?id=1">Cristóbal Liendo</a><br>
-                                        <p>Fecha de Nacimiento: <strong>6/10/1998</strong></p>
-                                        <p>Edad: <strong>16</strong></p>
-                                        <p>Sexo: <strong>Masculino</strong></p>
-                                        <p>Diagnóstico: <strong>Procastinus Máximus</strong></p>
-                                    </div>
+                                <div class="header">
+                                    <h1 class="title">Estadísticas</h1>
                                 </div>
-                                <div class="footer">
-                                    <hr>
-                                    <div class="stats">
-                                        <a href="" class="text-danger"><i class="ti-close icon-danger"></i>Eliminar paciente</a>
-                                    </div>
+
+                                <hr>
+
+                                <div class="header">
+                                    <h3 class="title">Cumplimiento de tratamientos</h3>
+                                    <p class="category">Breve información</p>
                                 </div>
+
+                                <br><br>
+                            	<div class="row">
+	                            	<div class="col-md-4 text-center">
+	                            		<h3 class="header text-center">Último Mes</h3>
+	                            	</div>
+	                            	<div class="col-md-4">
+	                            		<div class="row">
+	                            			<h5 class="text-center">Buen apego</h5>
+	                            			<div class="progress progress-line-info">
+		                    					<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100" style="width: 86%;">
+		                    						<span class="sr-only">60% Complete</span>
+		                    					</div>
+		                    				</div>
+	                            		</div>
+	                            		<div class="row">
+	                            			<h5 class="text-center">Apego regular</h5>
+	                            			<div class="progress progress-line-warning">
+		                    					<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%;">
+		                    						<span class="sr-only">60% Complete</span>
+		                    					</div>
+		                    				</div>
+	                            		</div>
+	                            		<div class="row">
+	                            			<h5 class="text-center">No apego</h5>
+	                            			<div class="progress progress-line-danger">
+		                    					<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="4" aria-valuemin="0" aria-valuemax="100" style="width: 4%;">
+		                    						<span class="sr-only">60% Complete</span>
+		                    					</div>
+		                    				</div>
+	                            		</div>
+	                            	</div>
+                            	</div>
+                                <div class="content table-responsive">
+                                    <table class="table">
+                                        <tr>
+                                            <td>Número de Pacientes: </td>
+                                            <td>200</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Sin retrasos </td>
+                                            <td>172</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Retrasos menores </td>
+                                            <td>20</td>
+                                        </tr>
+                                        <tr>
+                                        	<td>Retrasos graves</td>
+                                        	<td>6</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <hr>
+                                <div class="header">
+                                	<h3 class="title">Enfermedades</h3>
+                                	<p class="category">Datos sobre los pacientes y sus enfermedades</p>
+                                </div>
+                                <br><br>
+
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
 
 
         <footer class="footer">
